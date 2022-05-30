@@ -1,4 +1,4 @@
-package pl.itkurnik.pedalsapi.domain.season;
+package pl.itkurnik.pedalsapi.domain.weekday;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,19 +7,19 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "season")
+@Table(name = "weekday")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Season {
+public class Weekday {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name", length = 30)
+    @Column(name = "name", length = 40)
     private String name;
 
-    public Season(String name) {
+    public Weekday(String name) {
         this.name = name;
     }
 }

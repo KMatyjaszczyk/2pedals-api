@@ -1,4 +1,4 @@
-package pl.itkurnik.pedalsapi.domain.season;
+package pl.itkurnik.pedalsapi.domain.weather;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,19 +7,19 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "season")
+@Table(name = "weather")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Season {
+public class Weather {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name", length = 30)
+    @Column(name = "name")
     private String name;
 
-    public Season(String name) {
+    public Weather(String name) {
         this.name = name;
     }
 }
