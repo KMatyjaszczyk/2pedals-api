@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.itkurnik.pedalsapi.dto.HoursStatisticsDataDto;
-import pl.itkurnik.pedalsapi.dto.HoursStatisticsDto;
+import pl.itkurnik.pedalsapi.domain.hours.dto.HoursStatisticsDataDto;
+import pl.itkurnik.pedalsapi.domain.hours.dto.HoursStatisticsDto;
 
 import java.util.*;
 

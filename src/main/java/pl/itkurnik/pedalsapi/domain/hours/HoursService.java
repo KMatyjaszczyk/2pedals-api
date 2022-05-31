@@ -3,9 +3,9 @@ package pl.itkurnik.pedalsapi.domain.hours;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.itkurnik.pedalsapi.dto.AverageStatisticsResultDto;
-import pl.itkurnik.pedalsapi.dto.HoursStatisticsDataDto;
-import pl.itkurnik.pedalsapi.dto.SumStatisticsResultDto;
+import pl.itkurnik.pedalsapi.domain.hours.dto.AverageStatisticsResultDto;
+import pl.itkurnik.pedalsapi.domain.hours.dto.HoursStatisticsDataDto;
+import pl.itkurnik.pedalsapi.domain.hours.dto.SumStatisticsResultDto;
 
 import java.util.HashMap;
 import java.util.List;
