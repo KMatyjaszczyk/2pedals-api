@@ -1,4 +1,4 @@
-package pl.itkurnik.pedalsapi.domain.hours;
+package pl.itkurnik.pedalsapi.domain.days;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,11 +13,11 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "hours")
+@Table(name = "days")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Hours {
+public class Days {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -40,9 +40,6 @@ public class Hours {
     @ManyToOne(targetEntity = Weekday.class, cascade = CascadeType.MERGE)
     @JoinColumn(name = "weekday_id")
     private Weekday weekday;
-
-    @Column(name = "hour")
-    private int hour;
 
     @Column(name = "holiday")
     private boolean holiday;
@@ -91,28 +88,26 @@ public class Hours {
     @Column(name = "total")
     private int total;
 
-    public Hours(Date date,
-                 Season season,
-                 int year,
-                 Month month,
-                 Weekday weekday,
-                 int hour,
-                 boolean holiday,
-                 boolean workingday,
-                 Weather weather,
-                 BigDecimal temp,
-                 BigDecimal atemp,
-                 BigDecimal hum,
-                 BigDecimal windspeed,
-                 int casual,
-                 int registered,
-                 int total) {
+    public Days(Date date,
+                Season season,
+                int year,
+                Month month,
+                Weekday weekday,
+                boolean holiday,
+                boolean workingday,
+                Weather weather,
+                BigDecimal temp,
+                BigDecimal atemp,
+                BigDecimal hum,
+                BigDecimal windspeed,
+                int casual,
+                int registered,
+                int total) {
         this.date = date;
         this.season = season;
         this.year = year;
         this.month = month;
         this.weekday = weekday;
-        this.hour = hour;
         this.holiday = holiday;
         this.workingday = workingday;
         this.weather = weather;
