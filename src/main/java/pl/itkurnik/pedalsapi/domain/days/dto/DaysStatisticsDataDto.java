@@ -1,4 +1,4 @@
-package pl.itkurnik.pedalsapi.domain.hours.dto;
+package pl.itkurnik.pedalsapi.domain.days.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +13,7 @@ import java.util.Map;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class HoursStatisticsDataDto {
-    private Map<Integer, SumStatisticsResultDto> sumHours;
-    private Map<Integer, AverageStatisticsResultDto> avgHours;
+public class DaysStatisticsDataDto {
+    private Map<String, SumStatisticsResultDto> sumDays;
+    private Map<String, AverageStatisticsResultDto> avgDays;
 }

@@ -1,4 +1,4 @@
-package pl.itkurnik.pedalsapi.domain.hours.dto;
+package pl.itkurnik.pedalsapi.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
