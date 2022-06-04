@@ -4,5 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface WeekDayRepository extends JpaRepository<Weekday, Long> {
+public interface WeekdayRepository extends JpaRepository<Weekday, Long> {
 }
