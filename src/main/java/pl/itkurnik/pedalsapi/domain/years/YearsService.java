@@ -5,8 +5,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.itkurnik.pedalsapi.domain.days.Days;
 import pl.itkurnik.pedalsapi.domain.days.DaysService;
-import pl.itkurnik.pedalsapi.domain.dto.AverageStatisticsResultDto;
-import pl.itkurnik.pedalsapi.domain.dto.SumStatisticsResultDto;
+import pl.itkurnik.pedalsapi.domain.common.AverageStatisticsResultDto;
+import pl.itkurnik.pedalsapi.domain.common.SumStatisticsResultDto;
 import pl.itkurnik.pedalsapi.domain.years.dto.YearsStatisticsDataDto;
 
 import java.util.HashMap;

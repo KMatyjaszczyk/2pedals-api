@@ -1,4 +1,4 @@
-package pl.itkurnik.pedalsapi.domain.dto;
+package pl.itkurnik.pedalsapi.domain.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

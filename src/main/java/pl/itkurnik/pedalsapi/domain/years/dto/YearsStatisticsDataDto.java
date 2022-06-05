@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pl.itkurnik.pedalsapi.domain.dto.AverageStatisticsResultDto;
-import pl.itkurnik.pedalsapi.domain.dto.SumStatisticsResultDto;
+import pl.itkurnik.pedalsapi.domain.common.AverageStatisticsResultDto;
+import pl.itkurnik.pedalsapi.domain.common.SumStatisticsResultDto;
 
 import java.util.Map;
 

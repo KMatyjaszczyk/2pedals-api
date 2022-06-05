@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.itkurnik.pedalsapi.domain.common.PedalsConstants;
 import pl.itkurnik.pedalsapi.domain.hours.dto.HoursStatisticsDataDto;
 import pl.itkurnik.pedalsapi.domain.hours.dto.HoursStatisticsDto;
 
@@ -31,9 +32,9 @@ public class HoursController {
     @GetMapping("/statistics")
     public HoursStatisticsDto receiveStatistics() {
         HoursStatisticsDto response = new HoursStatisticsDto();
-        response.setName("test name");
-        response.setMenuItems(Collections.singletonList("test menu item"));
-        response.setTitles(Arrays.asList("test", "title"));
+        response.setName(PedalsConstants.HOURS_NAME);
+        response.setMenuItems(PedalsConstants.MENU_ITEMS);
+        response.setTitles(PedalsConstants.HOURS_TITLES);
         HoursStatisticsDataDto statistics = hoursService.receiveCalculatedStatistics();
         response.setData(statistics);
         return response;
